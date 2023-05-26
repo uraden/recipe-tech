@@ -1,0 +1,154 @@
+.recipe-list {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 40%;
+  }
+  .main-card {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .no-recipes {
+    text-align: center;
+  }
+  
+  .search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .meat-type-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+  }
+  
+  .meat-type-btn {
+    margin-right: 10px; 
+    border: none; 
+    background: none;
+    cursor: pointer;
+  }
+  
+  .meat-type-icon {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+  }
+  
+  .meat-type-icon.active,
+  .meat-type-btn:hover .meat-type-icon {
+    filter: grayscale(0%);
+  }
+  
+  .meat-type-icon.active {
+    filter: grayscale(0%);
+  }
+  
+  .meat-type-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+  }
+  
+  .search-bar {
+    width: 500px;
+    border-radius: 5px;
+    height: 50px;
+    border: none;
+  }
+  
+  .main-card:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
+  
+  .recipe-card {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    background-color: #F9F6F7;
+  }
+  
+  .recipe-card:hover {
+    box-shadow: 0 0 0 1px #ccc;
+    transform: translate(-5px, -5px);
+  }
+  
+  .recipe-card img {
+    max-height: 280px;
+    max-width: 100%;
+  }
+  
+  .recipe-image {
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .recipe-details {
+    margin-top: 10px;
+  }
+  
+  .recipe-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+  
+  .recipe-actions {
+    margin-top: 20px;
+  }
+  
+  .recipe-name {
+    font-size: 18px;
+  }
+  
+  .recipe-description {
+    font-size: 14px;
+  }
+  
+  .recipe-cooking-time {
+    font-size: 12px; 
+  }
+  
+  .bts-list {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .del-btn:hover {
+    color: red;
+  }
+  
+  .edit-btn:hover {
+    color: rgb(242, 206, 78);
+  }
+  
+  @media (max-width: 1512px) {
+    .recipe-list {
+      width: 100%;
+      max-width: 1200px;
+    }
+    .recipe-list {
+      margin: 0 auto;
+    }
+  }
