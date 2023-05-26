@@ -8,6 +8,12 @@ import { RootState, AppDispatch } from "../app/store";
 import { useNavigate } from "react-router-dom";
 import { Recipe } from "../types/recipeTypes";
 import "./ListPage.css";
+import cowIcon from "../icons/cow.png";
+import chickenIcon from "../icons/chicken.png";
+import fishIcon from "../icons/fish.png";
+import otherIcon from "../icons/others.png";
+import saladIcon from "../icons/salad.png";
+import sheepIcon from "../icons/sheep.png";
 
 const ListPage: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -92,37 +98,37 @@ const ListPage: React.FC = () => {
             className={`meat-type-btn ${selectedMeatType === "beef" ? "active" : ""}`}
             onClick={() => handleMeatTypeFilter("beef")}
           >
-            <img src="/icons/cow.png" alt="Beef" className={`meat-type-icon ${selectedMeatType === "beef" ? "active" : ""}`} />
+            <img src={cowIcon} alt="Beef" className={`meat-type-icon ${selectedMeatType === "beef" ? "active" : ""}`} />
           </button>
           <button
             className={`meat-type-btn ${selectedMeatType === "chicken" ? "active" : ""}`}
             onClick={() => handleMeatTypeFilter("chicken")}
           >
-             <img src="/icons/chicken.png" alt="Chicken" className={`meat-type-icon ${selectedMeatType === "chicken" ? "active" : ""}`} />
+             <img src={chickenIcon} alt="Chicken" className={`meat-type-icon ${selectedMeatType === "chicken" ? "active" : ""}`} />
           </button>
           <button
             className={`meat-type-btn ${selectedMeatType === "fish" ? "active" : ""}`}
             onClick={() => handleMeatTypeFilter("fish")}
           >
-            <img src="/icons/fish.png" alt="Fish" className={`meat-type-icon ${selectedMeatType === "fish" ? "active" : ""}`} />
+            <img src={fishIcon} alt="Fish" className={`meat-type-icon ${selectedMeatType === "fish" ? "active" : ""}`} />
           </button>
           <button
             className={`meat-type-btn ${selectedMeatType === "mutton" ? "active" : ""}`}
             onClick={() => handleMeatTypeFilter("mutton")}
           >
-            <img src="icons/sheep.png" alt="Mutton" className={`meat-type-icon ${selectedMeatType === "mutton" ? "active" : ""}`} />
+            <img src={sheepIcon} alt="Mutton" className={`meat-type-icon ${selectedMeatType === "mutton" ? "active" : ""}`} />
           </button>
           <button
             className={`meat-type-btn ${selectedMeatType === "vegetarian" ? "active" : ""}`}
             onClick={() => handleMeatTypeFilter("vegetarian")}
           >
-            <img src="icons/salad.png" alt="Vegetarian" className={`meat-type-icon ${selectedMeatType === "vegetarian" ? "active" : ""}`} />
+            <img src={saladIcon} alt="Vegetarian" className={`meat-type-icon ${selectedMeatType === "vegetarian" ? "active" : ""}`} />
           </button>
           <button
             className={`meat-type-btn ${selectedMeatType === "others" ? "active" : ""}`}
             onClick={() => handleMeatTypeFilter("others")}
           >
-            <img src="icons/others.png" alt="Others" className={`meat-type-icon ${selectedMeatType === "others" ? "active" : ""}`} />
+            <img src={otherIcon} alt="Others" className={`meat-type-icon ${selectedMeatType === "others" ? "active" : ""}`} />
           </button>
         </div>
       </div>
@@ -133,7 +139,7 @@ const ListPage: React.FC = () => {
           <div className="row">
             {searchResults.map((recipe: Recipe) => {
               if (selectedMeatType && recipe.meatType !== selectedMeatType) {
-                return null; // Skip rendering if meatType doesn't match the selected one
+                return null; 
               }
               return (
                 <div className="col-md-4 main-card" key={recipe.id}>
