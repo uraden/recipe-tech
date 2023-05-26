@@ -110,19 +110,19 @@ const ListPage: React.FC = () => {
             className={`meat-type-btn ${selectedMeatType === "mutton" ? "active" : ""}`}
             onClick={() => handleMeatTypeFilter("mutton")}
           >
-            <img src="/icons/sheep.png" alt="Mutton" className={`meat-type-icon ${selectedMeatType === "mutton" ? "active" : ""}`} />
+            <img src="icons/sheep.png" alt="Mutton" className={`meat-type-icon ${selectedMeatType === "mutton" ? "active" : ""}`} />
           </button>
           <button
             className={`meat-type-btn ${selectedMeatType === "vegetarian" ? "active" : ""}`}
             onClick={() => handleMeatTypeFilter("vegetarian")}
           >
-            <img src="/icons/salad.png" alt="Vegetarian" className={`meat-type-icon ${selectedMeatType === "vegetarian" ? "active" : ""}`} />
+            <img src="icons/salad.png" alt="Vegetarian" className={`meat-type-icon ${selectedMeatType === "vegetarian" ? "active" : ""}`} />
           </button>
           <button
             className={`meat-type-btn ${selectedMeatType === "others" ? "active" : ""}`}
             onClick={() => handleMeatTypeFilter("others")}
           >
-            <img src="/icons/others.png" alt="Others" className={`meat-type-icon ${selectedMeatType === "others" ? "active" : ""}`} />
+            <img src="icons/others.png" alt="Others" className={`meat-type-icon ${selectedMeatType === "others" ? "active" : ""}`} />
           </button>
         </div>
       </div>
