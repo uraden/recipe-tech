@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recipe-tech/static/css/main.328a695f.css",
-    "main.js": "/recipe-tech/static/js/main.9af61ec9.js",
+    "main.css": "/recipe-tech/static/css/main.a2b5b2fe.css",
+    "main.js": "/recipe-tech/static/js/main.c9148a4c.js",
     "static/js/787.a266e2bf.chunk.js": "/recipe-tech/static/js/787.a266e2bf.chunk.js",
     "static/media/fa-solid-900.svg": "/recipe-tech/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
     "static/media/fa-brands-400.svg": "/recipe-tech/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg",
@@ -27,12 +27,12 @@
     "index.html": "/recipe-tech/index.html",
     "static/media/arrow_left.svg": "/recipe-tech/static/media/arrow_left.db6e2d88c7c35a775ce4.svg",
     "static/media/arrow_right.svg": "/recipe-tech/static/media/arrow_right.f7c6ac6d310d3b82f0a0.svg",
-    "main.328a695f.css.map": "/recipe-tech/static/css/main.328a695f.css.map",
-    "main.9af61ec9.js.map": "/recipe-tech/static/js/main.9af61ec9.js.map",
+    "main.a2b5b2fe.css.map": "/recipe-tech/static/css/main.a2b5b2fe.css.map",
+    "main.c9148a4c.js.map": "/recipe-tech/static/js/main.c9148a4c.js.map",
     "787.a266e2bf.chunk.js.map": "/recipe-tech/static/js/787.a266e2bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.328a695f.css",
-    "static/js/main.9af61ec9.js"
+    "static/css/main.a2b5b2fe.css",
+    "static/js/main.c9148a4c.js"
   ]
 }
