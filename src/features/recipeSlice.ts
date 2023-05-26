@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { AppThunk } from '../app/store';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 import { Recipe } from '../types/recipeTypes';
 
 interface RecipeState {
@@ -120,6 +121,7 @@ export const createRecipe = (recipe: Recipe): AppThunk => async (dispatch) => {
       'https://5ff4107016cf4f0017c1fa9e.mockapi.io/api/v1/recipe',
       recipe
     );
+    toast.success('Recipe created successfully');
     dispatch(createRecipeSuccess(response.data));
   } catch (error: any) {
     dispatch(createRecipeFailure(error.message || 'Failed to create recipe'));
@@ -135,6 +137,7 @@ export const updateRecipe = (recipe: Recipe): AppThunk => async (dispatch) => {
       recipe
     );
     dispatch(updateRecipeSuccess(response.data));
+    toast.success('Recipe updated successfully');
   } catch (error: any) {
     dispatch(updateRecipeFailure(error.message || 'Failed to update recipe'));
   }
@@ -148,6 +151,7 @@ export const deleteRecipe = (recipeId: string): AppThunk => async (dispatch) => 
       `https://5ff4107016cf4f0017c1fa9e.mockapi.io/api/v1/recipe/${recipeId}`
     );
     dispatch(deleteRecipeSuccess(recipeId));
+    toast.info("Deleted Successfully!");
   } catch (error: any) {
     dispatch(deleteRecipeFailure(error.message || 'Failed to delete recipe'));
   }

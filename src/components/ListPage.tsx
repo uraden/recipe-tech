@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRecipes, deleteRecipe } from "../features/recipeSlice";
 import { Link } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 import { RootState, AppDispatch } from "../app/store";
 import { useNavigate } from "react-router-dom";
@@ -42,7 +42,6 @@ const ListPage: React.FC = () => {
   const handleDeleteRecipe = (recipeId: string) => {
     dispatch(deleteRecipe(recipeId));
     dispatch(fetchRecipes());
-    toast.info("Deleted Successfully!");
   };
 
   const handleEditRecipe = (recipeId: string) => {
@@ -84,7 +83,6 @@ const ListPage: React.FC = () => {
         pauseOnHover
         theme="light"
       />
-
       <div className="search-container">
         <input
           type="text"
