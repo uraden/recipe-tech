@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/recipe-tech/static/css/main.328a695f.css",
-    "main.js": "/recipe-tech/static/js/main.cf7cf03f.js",
+    "main.js": "/recipe-tech/static/js/main.70349db2.js",
     "static/js/787.a266e2bf.chunk.js": "/recipe-tech/static/js/787.a266e2bf.chunk.js",
     "static/media/fa-solid-900.svg": "/recipe-tech/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
     "static/media/fa-brands-400.svg": "/recipe-tech/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg",
@@ -16,17 +16,23 @@
     "static/media/fa-brands-400.woff2": "/recipe-tech/static/media/fa-brands-400.d878b0a6a1144760244f.woff2",
     "static/media/fa-regular-400.eot": "/recipe-tech/static/media/fa-regular-400.77206a6bb316fa0aded5.eot",
     "static/media/fa-regular-400.ttf": "/recipe-tech/static/media/fa-regular-400.491974d108fe4002b2aa.ttf",
+    "static/media/salad.png": "/recipe-tech/static/media/salad.236d4e051d24a9eb8cd8.png",
+    "static/media/cow.png": "/recipe-tech/static/media/cow.da169ec797b8141b1a5c.png",
+    "static/media/sheep.png": "/recipe-tech/static/media/sheep.57a600727e9e6ff903ba.png",
+    "static/media/chicken.png": "/recipe-tech/static/media/chicken.99fdad2c8f0618dfc708.png",
+    "static/media/fish.png": "/recipe-tech/static/media/fish.20709a0f68a2af2e85fb.png",
+    "static/media/others.png": "/recipe-tech/static/media/others.2a89d5d67815e939bba9.png",
     "static/media/fa-regular-400.woff": "/recipe-tech/static/media/fa-regular-400.bb58e57c48a3e911f15f.woff",
     "static/media/fa-regular-400.woff2": "/recipe-tech/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
     "index.html": "/recipe-tech/index.html",
     "static/media/arrow_left.svg": "/recipe-tech/static/media/arrow_left.db6e2d88c7c35a775ce4.svg",
     "static/media/arrow_right.svg": "/recipe-tech/static/media/arrow_right.f7c6ac6d310d3b82f0a0.svg",
     "main.328a695f.css.map": "/recipe-tech/static/css/main.328a695f.css.map",
-    "main.cf7cf03f.js.map": "/recipe-tech/static/js/main.cf7cf03f.js.map",
+    "main.70349db2.js.map": "/recipe-tech/static/js/main.70349db2.js.map",
     "787.a266e2bf.chunk.js.map": "/recipe-tech/static/js/787.a266e2bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.328a695f.css",
-    "static/js/main.cf7cf03f.js"
+    "static/js/main.70349db2.js"
   ]
 }
