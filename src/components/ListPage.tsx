@@ -63,9 +63,9 @@ const ListPage: React.FC = () => {
 
   const handleMeatTypeFilter = (meatType: string) => {
     if (selectedMeatType === meatType) {
-      setSelectedMeatType(null); // Unselect the current meatType
+      setSelectedMeatType(null); 
     } else {
-      setSelectedMeatType(meatType); // Select the new meatType
+      setSelectedMeatType(meatType); 
     }
   };
 
