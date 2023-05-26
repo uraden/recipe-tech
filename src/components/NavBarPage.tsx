@@ -21,7 +21,7 @@ export default function App() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className="mr-auto mb-5 mb-lg-0">
             <MDBNavbarItem>
-              <Link to="">
+              <Link to="/recipe-tech">
                 <MDBNavbarLink aria-current="page">Home</MDBNavbarLink>
               </Link>
             </MDBNavbarItem>

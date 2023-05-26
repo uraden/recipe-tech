@@ -12,7 +12,7 @@ function App() {
     <Router>
       <NavBarPage />
       <Routes>
-        <Route path='/' element={<ListPage />} />
+        <Route path='/recipe-tech' element={<ListPage />} />
         <Route path='/form' element={<FormPage />} />
         <Route path='/form/:id' element={<FormPage />} />
         <Route path='/detail/:id' element={<DetailPage />} />

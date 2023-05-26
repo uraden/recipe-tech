@@ -99,10 +99,10 @@ const FormPage: React.FC = () => {
 
     if (recipeToUpdate) {
       dispatch(updateRecipe(updatedRecipe));
-      navigate("/");
+      navigate("/recipe-tech");
     } else {
       dispatch(createRecipe(updatedRecipe));
-      navigate("/");
+      navigate("/recipe-tech");
     }
 
     setName("");
